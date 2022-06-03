@@ -33,6 +33,9 @@ function salvar(){
 
     const obj = {
         nome: document.getElementById('nome').value,
+        valor: document.getElementById('valor').value,
+        org: document.getElementById('org').value,
+        data: document.getElementById('data').value,
         lat: marker.getPosition().lat(),
         lng: marker.getPosition().lng()
     };
