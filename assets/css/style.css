@@ -15,6 +15,7 @@
 }
 
 #form {    
+  margin: auto;
   width: 50%;
   height: 100%;
   float: right;
@@ -29,17 +30,28 @@
 }
 
 label{
+  color: cornsilk;
   display: flex;
   font-size: 30px;
   padding: 15px;
   flex-direction: column;
   align-items: center;
 }
+
 input{
   display: flex;
   font-size: 30px;
   margin: auto;
   border-radius: 15px;
+}
+
+button{
+  display: flex;
+  font-size: 20px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 20px;
+  padding: 15px;
 }
       
 html, body {
