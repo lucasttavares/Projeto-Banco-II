@@ -7,7 +7,7 @@
     <script src="assets/javascript/mapa.js"></script>
   </head>
   <body>
-    <h1 class="logo">TITLE</h1>
+    <h1 class="logo">Onde é Hoje?</h1>
 
     <div id="map"></div>
 
@@ -27,6 +27,23 @@
                 <button type="button" onclick="salvar()">Salvar</button>
             </div>
         </form>
+        <div id="tabela">
+          <table>
+            <caption>Eventos</caption>
+            <tr>
+                <th>Nome:</th>
+                <th>Valor:</th>
+                <th>Data:</th>
+                <th>Org:</th>
+            </tr>
+            <tr id="t1">
+                <th>SELECT Name FROM * </th>
+                <th>SELECT Valor FROM *</th>
+                <th>SELECT Data FROM *</th>
+                <th>SELECT org FROM *</th>
+            </tr>
+
+        </div>
     </div>
 
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
