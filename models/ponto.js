@@ -10,23 +10,23 @@ const Ponto = database.define('ponto',{
     },
     nome:{
         type: DataTypes.STRING,
-        allowNull: false
+
     },
     valor:{
         type: DataTypes.FLOAT,
-        allowNull: false
+
     },
     org:{
         type: DataTypes.STRING,
-        allowNull: false
+
     },
     data:{
         type: DataTypes.STRING,
-        allowNull: false
+
     },
     geometry:{
         type: Sequelize.GEOMETRY,
-        allowNull: false
+
     }
 });
 
