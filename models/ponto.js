@@ -1,7 +1,6 @@
 const { DataTypes } = require('sequelize');
 const Sequelize = require('sequelize');
 const database = require('../database/database');
-/* const query = `select ST_x(geometria) as lat, select ST_y(geometria) as lng from "pontos"` */
 
 const Ponto = database.define('ponto',{
     id:{
@@ -25,7 +24,7 @@ const Ponto = database.define('ponto',{
         type: DataTypes.STRING,
         allowNull: false
     },
-    geometria:{
+    geometry:{
         type: Sequelize.GEOMETRY,
         allowNull: false
     }
