@@ -7,21 +7,23 @@ function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     center: center,
     zoom: 14,
+    mapTypeId: 'satellite'
   });
 
   marker = new google.maps.Marker({
       map: map,
       position: center,
-      draggable: true
+      draggable: true,
+      animation: google.maps.Animation.DROP
   });
 
   map.addListener("click", (evt) => {
     addMarker(evt);
   });
 
-  marker.addListener('position_changed', ()=>{
+/*   marker.addListener('position_changed', ()=>{
       map.setCenter(marker.position);
-  });
+  }); */
 
 }
 
