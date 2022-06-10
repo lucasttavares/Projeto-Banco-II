@@ -25,4 +25,4 @@ app.post('/pontos', pontoController.addPonto);
 
 app.get('/', pontoController.getPage);
 
-app.post('/teste', pontoController.getPontos)
+app.get('/list', pontoController.getList)
