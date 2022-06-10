@@ -7,23 +7,29 @@ const addPonto = async (request, response) =>{
     const valor = request.body.valor;
     const org = request.body.org;
     const data = request.body.data;
-    const geometria = {type: 'Point', coordinates:[request.body.lat, request.body.lng]}
+    const geometry = {type: 'Point', coordinates:[request.body.lat, request.body.lng]}
 
-    console.log(geometria);
+    console.log(geometry);
     sincronizar()
-    const ponto = Ponto.build({nome, valor, org, data, geometria});
+    const ponto = Ponto.build({nome, valor, org, data, geometry});
     ponto.save().then(()=>{
         response.status(200).send('Ponto salvo!');
     }).catch(err =>{
         response.status(400).send('Falha ao salvar');
     });
-
 };
 
+  const getPage = async function (request, response) {
+    response.render('../views/index')
+  }
+
+  function getPontos(request, response){
+    response.send("Nome: "+ request.body.nome + " Valor: " + request.body.valor + " Organização: " + request.body.org + " Data: " + request.body.data)
+  }
+  
 const sincronizar = async(request, response) =>{
     await Ponto.sync()
 }
 
 
-
-module.exports = {addPonto, sincronizar};
+module.exports = {addPonto, getPontos, sincronizar, getPage,};
