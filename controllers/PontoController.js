@@ -13,7 +13,7 @@ const addPonto = async (request, response) =>{
     sincronizar()
     const ponto = Ponto.build({nome, valor, org, data, geometry});
     ponto.save().then(()=>{
-        response.status(200).send('Ponto salvo!');
+        response.status(200).redirect('/list');
     }).catch(err =>{
         response.status(400).send('Falha ao salvar');
     });
@@ -23,8 +23,10 @@ const addPonto = async (request, response) =>{
     response.render('../views/index')
   }
 
-  function getPontos(request, response){
-    response.send("Nome: "+ request.body.nome + " Valor: " + request.body.valor + " Organização: " + request.body.org + " Data: " + request.body.data)
+  function getList(request, response){
+    Ponto.findAll().then(function(pontos){
+      response.render('list', {pontos: pontos})
+    })
   }
   
 const sincronizar = async(request, response) =>{
@@ -32,4 +34,4 @@ const sincronizar = async(request, response) =>{
 }
 
 
-module.exports = {addPonto, getPontos, sincronizar, getPage,};
+module.exports = {addPonto, sincronizar, getPage, getList};
