@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
 
 :root{
-  --primary-color:#0e4f7a;
+  --primary-color:#7c1d60;
   --white:#fff;
   --light-white:#aaa;
   --black:#3d3d3d;
@@ -48,9 +48,9 @@ button{
 
 button:hover,
 button:focus {
-  background: var(--light-white);
+  background: var(--primary-color);
   transform: scale(1.2);
-  transform: rotate(-15deg);
+  transform: rotate(-5deg);
   
 }
       
@@ -82,6 +82,9 @@ html, body {
   color:var(--white);
 }
 
+span{
+  color: var(--primary-color);
+}
 #button-area {
   margin-left: 925px;
 }
@@ -89,7 +92,7 @@ html, body {
 
 ::-webkit-scrollbar{
   height: .5rem;
-  width: 1rem;
+  width: .5rem;
 }
 
 
