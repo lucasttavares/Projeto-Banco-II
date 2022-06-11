@@ -23,7 +23,7 @@ const addPonto = async (request, response) =>{
     response.render('../views/index')
   }
 
-  function getList(request, response){
+  function addList(request, response){
     Ponto.findAll().then(function(pontos){
       response.render('list', {pontos: pontos})
     })
@@ -34,4 +34,4 @@ const sincronizar = async(request, response) =>{
 }
 
 
-module.exports = {addPonto, sincronizar, getPage, getList};
+module.exports = {addPonto, sincronizar, getPage, addList};
