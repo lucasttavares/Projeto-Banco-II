@@ -46,6 +46,27 @@ button{
   transform: translateX(0) scale(1);
 }
 
+h1{
+  color: cornsilk;
+  font-size: 25px;
+}
+
+p{
+  color: cornsilk;
+  font-size: 15px;
+}
+
+#list{
+  background-color: #4b4b4b;
+  display: flex;
+  margin: auto;
+  margin-bottom: 20px; 
+  padding: 15px;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+}
+
 button:hover,
 button:focus {
   background: var(--primary-color);

@@ -1,11 +1,11 @@
-<h1>Lista de eventos: </h1>
+<h1 class="logo">Lista de eventos: </h1>
 
 {{#each pontos}}
-
-    <h1>{{nome}}</h1>
-    <p>{{valor}}</p>
-    <p>{{org}}</p>
-    <p>{{data}}</p>
-    <p>{{geometry.coordinates}}</p>
-
+    <div id="list">
+        <h1>{{nome}}</h1>
+        <p>Valor: {{valor}}</p>
+        <p>Organização: {{org}}</p>
+        <p>Data: {{data}}</p>
+        <p>{{geometry.coordinates}}</p>
+   </div>
 {{/each}}
