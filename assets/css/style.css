@@ -35,12 +35,23 @@ input{
 }
 
 button{
-  display: flex;
+  position:relative;
+  display: inline-flex;
   font-size: 20px;
-  margin: auto;
-  margin-top: 20px;
+  margin: 5px;
+  margin-top: 25px;
   border-radius: 20px;
   padding: 15px;
+  transition: transform 1s;
+  transform: translateX(0) scale(1);
+}
+
+button:hover,
+button:focus {
+  background: var(--light-white);
+  transform: scale(1.2);
+  transform: rotate(-15deg);
+  
 }
       
 html, body {
@@ -69,6 +80,10 @@ html, body {
   text-align: center;
   font-size: 2.5rem;
   color:var(--white);
+}
+
+#button-area {
+  margin-left: 925px;
 }
 
 
