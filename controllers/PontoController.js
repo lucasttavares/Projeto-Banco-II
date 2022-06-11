@@ -24,7 +24,7 @@ const addPonto = async (request, response) =>{
   }
 
   function addList(request, response){
-    Ponto.findAll().then(function(pontos){
+    Ponto.findAll({order: [['id', 'DESC']]}).then(function(pontos){
       response.render('list', {pontos: pontos})
     })
   }
