@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Fascinate&display=swap');
 :root{
-  --primary-color:#7c1d60;
+  --primary-color:#1d7c77;
   --white:#fff;
-  --light-white:#aaa;
+  --light-white:rgb(204, 204, 204);
   --black:#3d3d3d;
   --light-bg:#4b4b4b;
 }
 
 
 #map {
-  width: 50%;
+  width: 100%;
   height: 90%;
   text-align: center;
-  margin-left: 325px;
+  margin-left: 10px;
   margin-bottom: 10px;
   margin-top: 30px;
 }
@@ -27,7 +27,7 @@
 }
 
 label{
-  color: var(--light-bg);
+  color: var(--light-white);
   display: flex;
   font-size: 30px;
   padding: 15px;
@@ -36,7 +36,7 @@ label{
 }
 
 input{
-  background: var(--light-bg);
+  background: var(--light-white);
   display: flex;
   font-size: 20px;
   margin: auto;
@@ -47,7 +47,7 @@ input{
 }
 
 button{
-  background: var(--light-bg);
+  background: var(--light-white);
   position:relative;
   display: inline-flex;
   font-size: 20px;
@@ -70,7 +70,7 @@ p{
 }
 
 #list{
-  background-color: #4b4b4b;
+  background-color:var(--light-white);
   display: flex;
   margin: auto;
   margin-bottom: 20px; 
@@ -92,7 +92,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: var(--light-white);
+  background-color: var(--light-bg);
   overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 8rem;
@@ -114,7 +114,7 @@ html, body {
   font-family: 'Fascinate', cursive;
   text-align: center;
   font-size: 2.5rem;
-  color:var(--light-bg);
+  color:var(--light-white);
 }
 
 span{
