@@ -49,7 +49,7 @@ function salvar(){
 
 }
 
-let map1;
+/* let map1;
 let marker1;
 
 let center1 = {lat: -6.888463202449027, lng: -38.558930105104125};
@@ -71,4 +71,4 @@ function initMap() {
 
 function addMarker(evt){
     marker1.setPosition(evt.latLng);
-}
+} */
