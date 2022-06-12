@@ -28,10 +28,14 @@ const addPonto = async (request, response) =>{
       response.render('list', {pontos: pontos})
     })
   }
+
+  const getLocal = async function (request, response) {
+    response.render('../views/local')
+  }
   
 const sincronizar = async(request, response) =>{
     await Ponto.sync()
 }
 
 
-module.exports = {addPonto, sincronizar, getPage, addList};
+module.exports = {addPonto, sincronizar, getPage, addList, getLocal};

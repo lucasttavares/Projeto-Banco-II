@@ -25,4 +25,6 @@ app.post('/pontos', pontoController.addPonto);
 
 app.get('/', pontoController.getPage);
 
-app.post('/list', pontoController.addList)
+app.post('/list', pontoController.addList);
+
+app.get('/local', pontoController.getLocal)

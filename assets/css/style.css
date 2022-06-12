@@ -17,6 +17,14 @@
   margin-bottom: 10px;
 }
 
+#map1 {
+  width: 50%;
+  height: 90%;
+  float:left;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
 label{
   color: cornsilk;
   display: flex;
