@@ -1,9 +1,29 @@
     <h1 class="logo">Seu evento é <span>Aqui</span></h1>
 
-
-{{!-- <div id="map1"></div>
+<div id="mapLocal"></div>
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly"
+      src="https://maps.googleapis.com/maps/api/js?key=&callback=initLocal&libraries=&v=weekly"
       async
-    ></script> --}}
+    ></script>
+
+    <script>
+
+  function initLocal() {
+  
+    let center = {geometry.coordinates};
+
+  let mapLocal = new google.maps.Map(document.getElementById("mapLocal"), {
+    center: center,
+    zoom: 14,
+    mapTypeId: 'roadmap'
+  });
+
+  let marker = new google.maps.Marker({
+    map: mapLocal,
+    position: center,
+    draggable: true,
+    animation: google.maps.Animation.DROP
+  })
+}  
+    </script>
