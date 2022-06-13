@@ -73,6 +73,7 @@ button{
 h1{
   color: var(--white);
   font-size: 25px;
+  margin-bottom: 15px;
 }
 
 p{
@@ -159,7 +160,7 @@ span{
 .list{ 
   position: absolute;
   bottom: -45px;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
   background: none;
   color: var(--primary-color);
   text-align: left;
