@@ -1,7 +1,12 @@
-    <h1 class="logo">Onde é <span>Hoje?</span></h1>
+  
+
 
     <div id="form">
         <form action="/list" method="post">
+        <div id="arealogo">
+        <h1 class="logo">Onde é <span>Hoje?</span></h1>
+        <button type="submit" class="list">Veja lista de eventos</button>
+        </div>
             <div id ="teste">
                 <label for="name">Nome:</label>
                 <input type="text" id="nome" name="nome"/>
@@ -11,15 +16,13 @@
                 <input type="text" id="org" name="org"/>
                 <label for="date">Data:</label>
                 <input type="text" id="data" name="data" placeholder="DD/MM/AAAA"/>
-
             </div>
-
-                 <div id="button-area">
-                <button type="button" onclick="salvar()">Salvar</button>
-                <button type="submit">Lista</button>
-            </div>
-           
+          
         </form>
+            <div id="button-area">
+                <button type="button" id="salvar" onclick="salvar()">Salvar</button>
+                
+            </div>
     </div>
 
     <div id="map"></div>

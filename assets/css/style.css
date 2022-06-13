@@ -10,12 +10,10 @@
 
 
 #map {
-  width: 100%;
-  height: 90%;
-  text-align: center;
-  margin-left: 10px;
-  margin-bottom: 10px;
-  margin-top: 30px;
+  width: 50%;
+  height: 100%;
+  float:left;
+
 }
 
 #map1 {
@@ -24,6 +22,10 @@
   float:left;
   margin-left: 10px;
   margin-bottom: 10px;
+}
+
+#form{
+  float: right;
 }
 
 label{
@@ -40,22 +42,22 @@ input{
   display: flex;
   font-size: 20px;
   margin: auto;
-  border-radius: 15px;
+  border-radius: 25px;
   text-align:center;
   width:300px;
   height: 25px;
 }
 
 button{
-  background: var(--light-white);
+  background: var(--light-bg);
+  color: var(--primary-color);
   position:relative;
   display: inline-flex;
   font-size: 20px;
   margin: 5px;
   margin-top: 25px;
-  border-radius: 20px;
-  padding: 15px;
-  transition: transform 1s;
+  padding: 12px 36px;
+  border-radius: 40px;
   transform: translateX(0) scale(1);
 }
 
@@ -87,7 +89,8 @@ button:hover,
 button:focus {
   background: var(--primary-color);
   transform: scale(1.2);
-  transform: rotate(-5deg);
+  transform:scale(1.1);
+  color: var(--light-bg);
   
 }
       
@@ -115,8 +118,8 @@ html, body {
 
 .logo{
   font-family: 'Fascinate', cursive;
-  text-align: center;
-  font-size: 2.5rem;
+  text-align: right;
+  font-size: 2rem;
   color:var(--light-white);
 }
 
@@ -142,4 +145,44 @@ span{
 ::-webkit-scrollbar-thumb{
   background-color: var(--primary-color);
   border-radius: 5rem;
+}
+
+.list{
+  position:absolute;
+  right: -30px;
+
+  margin-bottom: 5px;
+  background: none;
+  color: var(--primary-color);
+
+  margin-top: -5px;
+  text-align: left;
+  font-size: 1rem;
+
+}
+
+.list:hover{
+  background: none;
+  transform: none;
+  transform: none;
+  cursor: pointer;
+ 
+}
+
+#arealogo{
+  clear: both;
+  text-align: right;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+#salvar{
+  text-align: right;
+  position: absolute;
+  right: 145px;
+
+}
+
+#titulolista{
+  text-align: center;
 }
