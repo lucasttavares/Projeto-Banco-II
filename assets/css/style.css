@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Rubik:wght@300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Fascinate&display=swap');
 :root{
   --primary-color:#1d7c77;
@@ -39,6 +40,7 @@ label{
 }
 
 input{
+  font-family: 'Fascinate', cursive;
   background: var(--light-white);
   display: flex;
   font-size: 20px;
@@ -49,7 +51,12 @@ input{
   height: 25px;
 }
 
+label{
+  font-family: 'Fascinate', cursive;
+}
+
 button{
+  font-family: 'Fascinate', cursive;
   background: var(--light-bg);
   color: var(--primary-color);
   position:relative;
@@ -107,7 +114,7 @@ html, body {
 }
 
 *{
-  font-family: 'Fascinate', cursive;
+  font-family: 'Roboto Condensed', sans-serif;
   margin:0; 
   padding:0;
   box-sizing: border-box;
@@ -181,6 +188,7 @@ span{
   position: absolute;
   left: 180px;
   bottom:-420px;
+  
 }
 #salvar{
   text-align: right;
@@ -195,3 +203,4 @@ span{
 #titulolista{
   text-align: center;
 }
+
