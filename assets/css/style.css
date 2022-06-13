@@ -12,7 +12,7 @@
 #map {
   width: 50%;
   height: 100%;
-  float:left;
+  float:right;
 
 }
 
@@ -26,6 +26,7 @@
 
 #form{
   float: right;
+  position: absolute;
 }
 
 label{
@@ -42,7 +43,7 @@ input{
   display: flex;
   font-size: 20px;
   margin: auto;
-  border-radius: 25px;
+  border-radius: 10px;
   text-align:center;
   width:300px;
   height: 25px;
@@ -56,8 +57,9 @@ button{
   font-size: 20px;
   margin: 5px;
   margin-top: 25px;
-  padding: 12px 36px;
-  border-radius: 40px;
+  padding: 3px 9px;
+  font-size: 1.2rem;
+  border-radius: 10px;
   transform: translateX(0) scale(1);
 }
 
@@ -105,7 +107,7 @@ html, body {
 }
 
 *{
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Fascinate', cursive;
   margin:0; 
   padding:0;
   box-sizing: border-box;
@@ -113,7 +115,6 @@ html, body {
   border:none;
   text-decoration: none;
   transition: .2s linear;
-  text-transform: capitalize;
 }
 
 .logo{
@@ -121,6 +122,7 @@ html, body {
   text-align: right;
   font-size: 2rem;
   color:var(--light-white);
+  margin-left: 5px;
 }
 
 span{
@@ -147,39 +149,46 @@ span{
   border-radius: 5rem;
 }
 
-.list{
-  position:absolute;
-  right: -30px;
-
-  margin-bottom: 5px;
+.list{ 
+  position: absolute;
+  bottom: -45px;
+  margin-bottom: 25px;
   background: none;
   color: var(--primary-color);
-
-  margin-top: -5px;
   text-align: left;
   font-size: 1rem;
+  font-family: 'Rubik';
 
 }
 
 .list:hover{
   background: none;
   transform: none;
+  color: var(--primary-color);
   transform: none;
   cursor: pointer;
  
 }
 
 #arealogo{
-  clear: both;
-  text-align: right;
+  display: flex;
+  text-align: left;
   margin-top: 10px;
   margin-right: 5px;
 }
 
+#teste{
+  position: absolute;
+  left: 180px;
+  bottom:-420px;
+}
 #salvar{
   text-align: right;
   position: absolute;
-  right: 145px;
+  right: 100px;
+  bottom:-480px;
+  font-family: 'Fascinate', cursive;
+
 
 }
 
